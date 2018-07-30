@@ -1,0 +1,13 @@
+img{
+    width: 500px;
+    height: auto;
+}
+.header{
+    margin-top: 10rem;
+}
+.header h1:nth-child(2){
+    margin-top:2rem;
+}
+.header h1:nth-child(3){
+    color:rgba(172, 172, 172, 0.979);
+}
