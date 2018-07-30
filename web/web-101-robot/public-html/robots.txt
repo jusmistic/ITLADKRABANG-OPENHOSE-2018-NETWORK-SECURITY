@@ -1,0 +1,1 @@
+disallow: /flag{Th3_R0bot_C@nt_Re@d_dis_eie1}
