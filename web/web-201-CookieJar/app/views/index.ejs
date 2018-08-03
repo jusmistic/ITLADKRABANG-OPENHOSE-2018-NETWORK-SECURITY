@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <div class="main">
+      <% if(jar == "visitor") {%>
+        <img src="images/cookiejar.png" alt="">
+        <h1>Everything are in the <span>"Cookie_Jar"</span>.</h1>
+      <% } %> 
+      <% if(jar == "joy") {%>
+        <img src="images/joy.png" alt="">
+        <h1>Joy = MAKE</h1>
+      <% } %> 
+      <% if(jar == "yeri") {%>
+        <img src="images/yeri.png" alt="" srcset="">
+        <h1>Yeri = GREAT</h1>
+      <% } %> 
+      <% if(jar == "irene") {%>
+        <img src="images/irene.png" alt="" srcset="">
+        <h1>ITFORGE</h1>
+      <% } %> 
+      <% if(jar == "seulgi") {%>
+        <img src="images/seulgi.png" alt="" srcset="">
+        <h1>seulgi = AGAIN</h1>
+      <% } %> 
+      <% if(jar == "wendy") {%>
+        <img src="images/wendy.png" alt="" srcset="">
+        <h1>wendy = EIEI</h1>
+      <% } %>
+      <% if(jar == "cookie_jar") {%>
+        <img src="https://78.media.tumblr.com/bc615ca45e829ea3b68c6d2a7ff6d408/tumblr_pa207i6Ko81ti7fhko4_540.gif" alt="" srcset="">
+        <h1>Flag{$joy_<span>$irene</span>_$yeri_$seulgi_$wendy}</h1>
+      <% } %> 
+    </div>
+  </body>
+</html>
