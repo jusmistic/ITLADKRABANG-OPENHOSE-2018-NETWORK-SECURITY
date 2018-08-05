@@ -21,13 +21,20 @@ def main():
         #decode byte -> str
         msg = sock.recv(1024).decode('ascii')
         # print(msg)
-        if 'or' not in msg and 'ar' not in msg and 'la' not in msg: #check trash text
+        if 'or' not in msg and 'ar' not in msg and 'la' not in msg and 'ime' not in msg: #check trash text
             temp = msg.rstrip(" = ?\r\n").split(" + ")
             val = str(int(temp[0])+int(temp[1]))
             sock.send(val.encode())
         if 'la' in msg:
             print(msg)
+            sock.close()
             return 'eiei'
+        if 'ime' in msg:
+            print("Timeout ---> Reconnecting")
+            sock.close()
+            sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+            sock.connect((host, port))                 
+
 
     sock.close()
 
