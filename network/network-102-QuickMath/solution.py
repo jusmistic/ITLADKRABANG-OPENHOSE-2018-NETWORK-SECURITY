@@ -33,8 +33,7 @@ def main():
             print("Timeout ---> Reconnecting")
             sock.close()
             sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-            sock.connect((host, port))                 
-
+            sock.connect((host, port))
 
     sock.close()
 
