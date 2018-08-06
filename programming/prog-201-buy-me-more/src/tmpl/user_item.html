@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <a href="./item/buy">Buy item</a><br>
+    <a href="./user/logout">Logout</a><br>
+    Money: {{ $length := len . }} {{ if gt $length 0}} {{(index . 0).Money}} {{ else }} 5000  {{end}}
+    <table>
+        <thead>
+            <tr>
+                <th>Item list</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{range $idx, $item := . }}
+            <tr>
+                <td>{{$item.Item}}</td>
+            </tr>
+            {{end}}
+            <tr>
+                <td>{{ if gt $length 2}} ${FLAG JA} {{end}}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
