@@ -1427,7 +1427,7 @@ disallow: /readfolder
 disallow: /readme
 disallow: /realestate
 disallow: /recent
-disallow: /red
+disallow: /redvelvet
 disallow: /reddit
 disallow: /redir
 disallow: /redirect
