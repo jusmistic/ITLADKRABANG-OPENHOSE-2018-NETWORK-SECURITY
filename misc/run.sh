@@ -1,0 +1,1 @@
+docker run -dit --name misc-101 -p 7101:7101 misc-101-container
