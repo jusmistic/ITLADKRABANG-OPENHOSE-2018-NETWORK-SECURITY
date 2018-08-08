@@ -11,7 +11,7 @@ def main():
 
     #Assign Value
     host = '127.0.0.1'
-    port = 9102
+    port = 9201
 
     # Connect to remote server
     sock.connect((host, port))                 
