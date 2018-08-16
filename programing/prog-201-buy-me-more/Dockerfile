@@ -1,4 +1,4 @@
-FROM golang:1.10-alpine as builder
+FROM golang:1.10.3-alpine3.7 as builder
 
 RUN apk add --no-cache git gcc libc-dev curl
 RUN curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
