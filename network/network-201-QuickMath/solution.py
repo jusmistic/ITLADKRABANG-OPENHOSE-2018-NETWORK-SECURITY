@@ -10,7 +10,7 @@ def main():
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
     #Assign Value
-    host = '127.0.0.1'
+    host = '161.246.38.80'
     port = 9201
 
     # Connect to remote server
